@@ -9,3 +9,81 @@ xkb_symbols "us" {
 
     include "level3(lalt_switch)"
 };
+default  partial alphanumeric_keys
+xkb_symbols "de" {
+    name[Group1]="Fxtec Pro1 (DE)";
+
+    key <LWIN> { [ISO_Level3_Shift ] };
+    modifier_map Mod5 { ISO_Level3_Shift };
+
+    key <ESC>   { [    Escape, Escape, Escape ] };
+    key <AE01>  { [         1,     exclam,       exclam,       exclam ] };
+    key <AE02>  { [         2,   quotedbl,     quotedbl,     quotedbl ] };
+    key <AE03>  { [         3,   sterling,    backslash,     sterling ] };
+    key <AE04>  { [         4,     dollar,       dollar,       dollar ] };
+    key <AE05>  { [         5,    percent,         less, threeeighths ] };
+    key <AE06>  { [         6,  ampersand,    ampersand,    ampersand ] };
+    key <AE07>  { [         7,      slash,        slash,        slash ] };
+    key <AE08>  { [         8,  parenleft,    parenleft,    parenleft ] };
+    key <AE09>  { [         9, parenright,   parenright,   parenright ] };
+    key <AE10>  { [         0,      equal,        equal,        equal ] };
+    key <AE11>  { [    ssharp,   question,     question,     question ] };
+    key <AE12>  { [     acute,      grave,        grave,        grave ] };
+    key <BKSP>  { [ Backspace, Delete, Delete ] };
+
+    key <TAB>   { [       Tab,ISO_Left_Tab, ISO_Left_Tab ] };
+    key <AD01>  { [         q,          Q,           at,           at ] };
+    key <AD02>  { [         w,          W,  asciicircum,  asciicircum ] };
+    key <AD03>  { [         e,          E,     EuroSign,     EuroSign ] };
+    key <AD04>  { [         r,          R,       degree,       degree ] };
+    key <AD05>  { [         t,          T,XF86AudioMute,       Tslash ] };
+    key <AD06>  { [         z,          Z,    leftarrow,          yen ] };
+    key <AD07>  { [         u,          U,    braceleft,    braceleft ] };
+    key <AD08>  { [         i,          I,  bracketleft,  bracketleft ] };
+    key <AD09>  { [         o,          O, bracketright, bracketright ] };
+    key <AD10>  { [         p,          P,   braceright,   braceright ] };
+    key <AD11>  { [udiaeresis, Udiaeresis,   asciitilde,   asciitilde ] };
+    key <AD12>  { [      plus,   asterisk,     asterisk,     asterisk ] };
+    key <DELETE> { [    Delete, Delete, Delete ] };
+
+    key <SHIFT_LOCK> { [ Shift_Lock, Shift_Lock, Shift_Lock ] };
+    key <AC01>  { [         a,          A,            a,           AE ] };
+    key <AC02>  { [         s,          S,       ssharp,      section ] };
+    key <AC03>  { [         d,          D,          eth,          ETH ] };
+    key <AC04>  { [         f,          F,      dstroke,  ordfeminine ] };
+    key <AC05>  { [         g,          G,          eng,          ENG ] };
+    key <AC06>  { [         h,          H,      hstroke,      Hstroke ] };
+    key <AC07>  { [         j,          J,   underscore,    dead_horn ] };
+    key <AC08>  { [         k,          K,          kra,    ampersand ] };
+    key <AC09>  { [         l,          L,   apostrophe,   apostrophe ] };
+    key <AC10>  { [odiaeresis, Odiaeresis,    backslash,    backslash ] };
+    key <AC11>  { [apostrophe, asciitilde,   numbersign,   numbersign ] };
+// enter
+
+// lshift
+    key <AB01>  { [      less,    greater, guillemotleft, guillemotright ] };
+    key <AB02>  { [         y,          Y,           bar,         bar ] };
+    key <AB03>  { [         x,          X, guillemotright,    greater ] };
+    key <AB04>  { [         c,          C, XF86AudioLowerVolume, copyright ] };
+    key <AB05>  { [         v,          V, XF86AudioRaiseVolume, leftsinglequotemark ]   };
+    key <AB06>  { [         b,          B, XF86MonBrightnessDown, rightsinglequotemark ] };
+    key <AB07>  { [         n,          N, XF86MonBrightnessUp,     N ] };
+    key <AB08>  { [         m,          M,           mu,           mu ] };
+    key <AB09>  { [     comma,  semicolon,        grave,    masculine ] };
+    key <AB10>  { [    period,      colon, periodcentered,   division ] };
+    key <AB11>  { [     minus, underscore,   underscore,   underscore ] };
+    key <UP>    { [        Up,      Prior, Prior ] };
+// rshift
+
+// lctrl
+// fn
+// alt
+    key <AA01>  { [     horizconnector,      space,        space, nobreakspace ] }; 
+    key <SPCE>  { [     space,      space,        space, nobreakspace ] };
+// rctrl    
+// fn
+key <AB08>  { [     comma,      slash, horizconnector,   multiply ] };
+    key <LEFT>  { [      Left,       Home, Home ] };
+    key <DOWN>  { [      Down,       Next, Next ] };
+    key <RGHT>  { [      Right,       End, End  ] };
+};
